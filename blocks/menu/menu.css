@@ -1,0 +1,16 @@
+.menu {
+  margin: 20px auto 0 auto;
+  max-width: 1192px;
+  height: 80px;
+  background: #FFFFFF;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px 0 24px;
+
+  z-index: 1;
+  position: relative;
+}

@@ -1,0 +1,9 @@
+.menu__subitem-container_center {
+  width: 220px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.menu__subitem-container_center:first-child {
+
+}

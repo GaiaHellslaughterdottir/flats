@@ -1,0 +1,19 @@
+.menu__subitems {
+  display: none;
+  position: absolute;
+  width: 1120px;
+  height: auto;
+  background: #FFFFFF;
+  border-radius: 0 0 50px 50px;
+  left:50%;
+  transform: translateX(-50%);
+  color: rgba(32, 48, 74, 1);
+  cursor: default;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 40px 60px;
+
+  z-index: 2;
+}

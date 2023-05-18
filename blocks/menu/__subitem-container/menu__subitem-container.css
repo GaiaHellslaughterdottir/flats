@@ -1,0 +1,7 @@
+.menu__subitem-container {
+  margin-right: 40px;
+}
+
+.menu__subitem-container:last-child {
+  margin-right: 0;
+}

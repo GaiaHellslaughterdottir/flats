@@ -1,0 +1,4 @@
+.menu__items {
+  list-style: none;
+  flex-grow: 1;
+}

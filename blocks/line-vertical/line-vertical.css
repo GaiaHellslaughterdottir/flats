@@ -1,0 +1,5 @@
+.line-vertical {
+  width: 1px;
+  height: content-box;
+  background-color: rgba(138, 153, 181, 0.3);
+}

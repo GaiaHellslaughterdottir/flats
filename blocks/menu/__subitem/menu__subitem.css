@@ -1,0 +1,14 @@
+.menu__subitem {
+  display: block;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 14px;
+
+}
+
+.menu__subitem:first-of-type {
+  margin-top: 0;
+
+}

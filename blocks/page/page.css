@@ -1,0 +1,10 @@
+.page {
+  background-color: #EFF1F4;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: Golos, Arial, sans-serif;
+}
