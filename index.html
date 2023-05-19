@@ -32,8 +32,8 @@
             </div>
           </div>
         </li>
-        <li class="menu__item">Отчеты</li>
-        <li class="menu__item">Калькулятор</li>
+        <li class="menu__item"><span>Отчеты</span></li>
+        <li class="menu__item"><span>Калькулятор</span></li>
         <li class="menu__item"><span>Ещё</span>
           <div class="menu__subitems">
             <a class="menu__subitem menu__subitem-container_center">О компании</a>
@@ -50,13 +50,47 @@
       <div class="menu__phone"><span>+9 900 00 00 00 </span><span class="menu__phone_time">(9:00 — 21:00)</span></div>
 
       <ul>
-        <div class="menu__language"><a class="menu__language-link"></a></div>
+        <li class="menu__language"><span class="menu__language-link"></span>
+          <div class="menu__subitems">
+            <div class="menu__subitem-container_language">
+              <img class="menu__language__lang-img" src="images/Flag_kazah.png">
+              <a class="menu__subitem">қазақ</a>
+            </div>
+            <div class="line-vertical"></div>
+            <div class="menu__subitem-container_language">
+              <img class="menu__language__lang-img" src="images/Flag_russia.png">
+              <a class="menu__subitem">Русский</a>
+            </div>
+            <div class="line-vertical"></div>
+            <div class="menu__subitem-container_language">
+              <img class="menu__language__lang-img" src="images/Flag_britain.png">
+              <a class="menu__subitem">English</a>
+            </div>
+          </div>
+        </li>
       </ul>
     </menu>
   </header>
 
   <section class="banner">
-  <h1>z;dghjdg</h1>
+    <div class="banner__info">
+      <h1 class="banner__title">ПРИЕМКА КВАРТИРЫ <br/>В НОВОСТРОЙКЕ</h1>
+      <h2 class="banner__subtitle">Закажите приемку квартиры и устраните дефекты за счет застройщика</h2>
+      <form class="form">
+        <div class="form__square-wrapper">
+          <input class="form__field" type="text">
+          <input id="form__field-square-scroll" class="form__field" type="range" min="1" max="500" step="1">
+        </div>
+        <button class="form__button-submit" type="submit">Узнать стоимость</button>
+      </form>
+    </div>
+    <div class="banner__image"></div>
+    <nav class="banner__links">
+      <a class="banner__link" title="текст"><img class="banner__link-image" src="images/vk.png"></a>
+      <a class="banner__link"><img class="banner__link-image" src="images/tg.png"></a>
+      <a class="banner__link"><img class="banner__link-image" src="images/WhatsApp.png"></a>
+      <a class="banner__link"><img class="banner__link-image" src="images/callback.png"></a>
+    </nav>
   </section>
 
   <section class="content-invitation">
@@ -115,6 +149,6 @@
 
   </footer>
 
-
+  <script src="script/script.js"></script>
 </body>
 </html>

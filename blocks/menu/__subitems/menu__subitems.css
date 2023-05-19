@@ -4,7 +4,7 @@
   width: 1120px;
   height: auto;
   background: #FFFFFF;
-  border-radius: 0 0 50px 50px;
+  border-radius: 0 0 40px 40px;
   left:50%;
   transform: translateX(-50%);
   color: rgba(32, 48, 74, 1);
@@ -16,4 +16,6 @@
   padding: 50px 60px 40px 60px;
 
   z-index: 2;
+
 }
+

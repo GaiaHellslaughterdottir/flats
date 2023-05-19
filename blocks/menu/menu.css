@@ -3,7 +3,7 @@
   max-width: 1192px;
   height: 80px;
   background: #FFFFFF;
-  border-radius: 50px;
+  border-radius: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -13,4 +13,11 @@
 
   z-index: 1;
   position: relative;
+
+  pointer-events: none;
+}
+
+.menu:hover {
+  border-radius: 40px 40px 0 0;
+
 }

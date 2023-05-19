@@ -6,6 +6,13 @@
 
 @import "../blocks/line-vertical/line-vertical.css";
 
+/* Форма */
+
+@import "../blocks/form/form.css";
+@import "../blocks/form/__button-submit/form__button-submit.css";
+@import "../blocks/form/__square-wrapper/form__square-wrapper.css";
+@import "../blocks/form/__field/form__field.css";
+
 /* Меню */
 
 @import "../blocks/header/header.css";
@@ -24,6 +31,18 @@
 @import "../blocks/menu/__phone/_time/menu__phone_time.css";
 @import "../blocks/menu/__language/menu__language.css";
 @import "../blocks/menu/__language-link/menu__language-link.css";
+@import "../blocks/menu/__language/_lang-img/menu__language__lang-img.css";
+@import "../blocks/menu/__subitem-container/menu__subitem-container_language/menu__subitem-container_language.css";
 
+/* Секция баннер */
+
+@import "../blocks/banner/banner.css";
+@import "../blocks/banner/__info/banner__info.css";
+@import "../blocks/banner/banner__title/banner__title.css";
+@import "../blocks/banner/__subtitle/banner__subtitle.css";
+@import "../blocks/banner/__image/banner__image.css";
+@import "../blocks/banner/__links/banner__links.css";
+@import "../blocks/banner/__link/banner__link.css";
+@import "../blocks/banner/__link-image/banner__link-image.css";
 
 

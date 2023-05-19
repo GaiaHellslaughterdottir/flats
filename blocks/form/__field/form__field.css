@@ -1,0 +1,100 @@
+.form__field {
+  width: auto;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+
+.form__field[type=range] {
+  height: 13px;
+  -webkit-appearance: none;
+}
+
+.form__field[type=range] {
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--value) - var(--min)) / var(--range));
+  --sx: calc(0.5 * 13px + var(--ratio) * (100% - 13px));
+}
+
+.form__field[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  background: #FFFFFF;
+  border: 3px solid rgba(241, 109, 34, 1);
+  margin-top: calc(3px * 0.5 - max(13px * 0.5, 3px));
+}
+
+.form__field[type=range]::-webkit-slider-runnable-track {
+  height: 3px;
+  border: none;
+  border-radius: 0;
+  background: #FFFFFF;
+  box-shadow: none;
+}
+
+.form__field[type=range]::-webkit-slider-runnable-track {
+  background: linear-gradient(rgba(241, 109, 34, 1),rgba(241, 109, 34, 1)) 0/var(--sx) 100% no-repeat, #efefef;
+}
+
+
+.form__field[type=range]::-moz-range-thumb {
+  width: max(calc(13px - 3px - 3px),0px);
+  height: max(calc(13px - 3px - 3px),0px);
+  border-radius: 13px;
+  background: #FFFFFF;
+  border: 3px solid rgba(241, 109, 34, 1);
+}
+
+.form__field[type=range]::-moz-range-track {
+  height: 3px;
+  border: none;
+  border-radius: 0;
+  background: #FFFFFF;
+  box-shadow: none;
+}
+
+.form__field[type=range]::-moz-range-track {
+  background: linear-gradient(rgba(241, 109, 34, 1),rgba(241, 109, 34, 1)) 0/var(--sx) 100% no-repeat, #FFFFFF;
+}
+
+.form__field[type=range]::-ms-fill-upper {
+  background: transparent;
+  border-color: transparent;
+}
+
+.form__field[type=range]::-ms-fill-lower {
+  background: transparent;
+  border-color: transparent;
+}
+
+.form__field[type=range]::-ms-thumb {
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  background: #FFFFFF;
+  border: 3px solid rgba(241, 109, 34, 1);
+  margin-top: 0;
+  box-sizing: border-box;
+}
+
+.form__field[type=range]::-ms-track {
+  height: 3px;
+  border-radius: 0;
+  background: #FFFFFF;
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+.form__field[type=range]::-ms-fill-lower {
+  height: 3px;
+  border-radius: 0px 0 0 0px;
+  margin: -undefined 0 -undefined -undefined;
+  background: rgba(241, 109, 34, 1);
+  border: none;
+  border-right-width: 0;
+}
