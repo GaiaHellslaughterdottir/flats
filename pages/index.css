@@ -9,9 +9,12 @@
 /* Форма */
 
 @import "../blocks/form/form.css";
-@import "../blocks/form/__button-submit/form__button-submit.css";
 @import "../blocks/form/__square-wrapper/form__square-wrapper.css";
-@import "../blocks/form/__field/form__field.css";
+@import "../blocks/form/__field-title/form__field-title.css";
+@import "../blocks/form/__field-value/form__field-value.css";
+@import "../blocks/form/__field-scroll/form__field-scroll.css";
+@import "../blocks/form/__button-submit/form__button-submit.css";
+
 
 /* Меню */
 
@@ -45,4 +48,14 @@
 @import "../blocks/banner/__link/banner__link.css";
 @import "../blocks/banner/__link-image/banner__link-image.css";
 
+/* Секция приглашение */
 
+@import "../blocks/invitation/invitation.css";
+@import "../blocks/invitation/__title/invitation__title.css";
+@import "../blocks/invitation/__subtitle/invitation__subtitle.css";
+@import "../blocks/invitation/__cards-container/invitation__cards-container.css";
+@import "../blocks/invitation/__card/invitation__card.css";
+@import "../blocks/invitation/__card-shadow/invitation__card-shadow.css";
+@import "../blocks/invitation/__card-title/invitation__card-title.css";
+@import "../blocks/invitation/__card-text/invitation__card-text.css";
+@import "../blocks/invitation/__card-image/invitation__card-image.css";

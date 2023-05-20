@@ -1,4 +1,4 @@
-for (let e of document.querySelectorAll('input[type="range"].form__field')) {
+for (let e of document.querySelectorAll('input[type="range"].form__field-scroll')) {
   e.style.setProperty('--value', e.value);
   e.style.setProperty('--min', e.min == '' ? '0' : e.min);
   e.style.setProperty('--max', e.max == '' ? '100' : e.max);

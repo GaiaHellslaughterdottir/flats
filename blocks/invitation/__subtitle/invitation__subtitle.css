@@ -1,0 +1,9 @@
+.invitation__subtitle {
+  max-width: 700px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #20304A;
+  margin: 0 0 60px 0;
+}

@@ -1,0 +1,9 @@
+.invitation__card-shadow {
+  width: 320px;
+  height: 10px;
+  position: absolute;
+  background: rgba(203, 204, 206, .13);
+  border-radius: 20px 20px 0 0;
+  top: -10px;
+  z-index: 0;
+}

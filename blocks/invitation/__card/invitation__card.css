@@ -1,0 +1,25 @@
+.invitation__card {
+  padding: 40px;
+  width: 320px;
+  height: 400px;
+  background: #EFF1F4;
+  border-radius: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.invitation__card:hover {
+  background: #21A0AA;
+}
+
+.invitation__card:hover .invitation__card-shadow {
+  background: rgba(33, 160, 170, .33);
+}
+
+.invitation__card:hover .invitation__card-title {
+  color: white;
+}
+
+.invitation__card:hover .invitation__card-text {
+  color: white;
+}

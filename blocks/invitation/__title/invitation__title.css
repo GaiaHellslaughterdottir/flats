@@ -1,0 +1,9 @@
+.invitation__title {
+  max-width: 800px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 48px;
+  text-align: center;
+  color: #20304A;
+  margin: 0 0 20px 0;
+}

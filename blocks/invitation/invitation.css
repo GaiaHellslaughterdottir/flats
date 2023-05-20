@@ -1,0 +1,9 @@
+.invitation {
+  max-width: 100%;
+  background-color: white;
+  padding: 80px 100px 100px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 60px 60px 0 0;
+  align-items: center;
+}

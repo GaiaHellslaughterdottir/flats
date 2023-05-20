@@ -1,4 +1,7 @@
 .banner__link-image {
   width: 42px;
   height: 42px;
+  margin: 8px 0 0 0;
+  cursor: pointer;
+
 }
