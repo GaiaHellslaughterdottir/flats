@@ -1,0 +1,7 @@
+.leadform {
+  max-width: 100%;
+  background-color: #21A0AA;
+  padding: 60px 150px;
+  display: inline-flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,13 @@
+.list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px;
+  width: 520px;
+
+  background: #FFFFFF;
+  border-radius: 20px;
+
+}

@@ -72,7 +72,7 @@
     </menu>
   </header>
 
-  <section class="banner">
+  <!--<section class="banner">
     <div class="banner__info">
       <h1 class="banner__title">ПРИЕМКА КВАРТИРЫ <br/>В НОВОСТРОЙКЕ</h1>
       <h2 class="banner__subtitle">Закажите приемку квартиры и устраните дефекты за счет застройщика</h2>
@@ -96,7 +96,7 @@
   </section>
 
   <section class="invitation">
-    <h2 class="invitation__title">Вас пригласили на осмотр квартиры в новостройке?</h2>
+    <h2 class="section__title">Вас пригласили на осмотр квартиры в новостройке?</h2>
     <p class="invitation__subtitle">Вызовите квалифицированного специалиста по приемке со всем необходимым
       оборудованием, чтобы потом не заниматься устранением недоделок за свой счет</p>
     <div class="invitation__cards-container">
@@ -125,16 +125,66 @@
         <img class="invitation__card-image" src="images/remont-man_3.png">
       </div>
     </div>
-
   </section>
 
-  <section class="content-violations">
+  <section class="violations">
+    <h2 class="section__title">Часто встречающиеся нарушения</h2>
+    <nav class="tabs">
+      <a class="tabs__cell" href="#">Двери и окна</a>
+      <a class="tabs__cell tabs__cell_active" href="#">Пол и стены</a>
+      <a class="tabs__cell" href="#">Канализация и вода</a>
+      <a class="tabs__cell" href="#">Вентиляция</a>
+      <a class="tabs__cell" href="#">Электричество</a>
+    </nav>
+    <div class="violations__container">
+      <div class="list">
+        <p class="list__text"><img class="list__img" src="images/no.png">Отклонение по вертикали стены</p>
+        <p class="list__text"><img class="list__img" src="images/no.png">Не заделаны штробы</p>
+        <p class="list__text"><img class="list__img" src="images/no.png">Разнотон обоев</p>
+        <p class="list__text"><img class="list__img" src="images/no.png">Перепад уровня пола</p>
+        <p class="list__text"><img class="list__img" src="images/no.png">Трещины по штукатурке</p>
+        <p class="list__text"><img class="list__img" src="images/no.png">Плесень в местах стыков </p>
+        <div class="list__shadow"></div>
+      </div>
+      <div class="inspection">
+        <h2 class="inspection__title">В среднем за приемку выявляется<br>
+          <span class="inspection__title_orange">около 50 нарушений</span></h2>
+        <p class="inspection__text">70% нарушений обнаружены благодаря сертифицированным и дорогостоящям приборам, а
+          также
+          знаниям нормативов</p>
+        <div class="inspection__download-button-container">
+          <button class="inspection__download-button" type="button"><img class="inspection__download-button-img"
+                                                                         src="images/bullet_check-list.png">Скачать
+            чек-лист
+          </button>
+          <button class="inspection__download-button" type="button"><img class="inspection__download-button-img"
+                                                                         src="images/bullet_report.png">Пример дефектной
+            ведомости
+          </button>
+        </div>
+      </div>
+    </div>
 
+  </section>-->
+
+  <section class="leadform">
+    <div class="leadform__container">
+      <h2 class="section__title section__title_white section__title_left">Отправьте заявку <br>и получите
+        <span class="section__title-part">в подарок</span> :
+      </h2>
+      <p class="leadform__text">Расчет площади квартиры, рекомендации по ремонту,
+        дизайну и строительной бригаде</p>
+      <form class="form">
+        <label class="form__field-title" for="form__field-phone">Телефон</label>
+        <input class="form__field-phone" id="form__field-phone" type="tel" placeholder="+9 (___) ___-__-__">
+        <button class="form__button-submit" type="submit">Отправить</button>
+      </form>
+      <p class="section__agreement-text">Нажимая на кнопку, вы принимаете Положение и Согласие
+        на обработку персональных данных</p>
+    </div>
+    <img class="leadform__img" src="images/manager.png">
   </section>
 
-  <section class="content-calculation">
-
-  </section>
 
   <section class="content-services">
 

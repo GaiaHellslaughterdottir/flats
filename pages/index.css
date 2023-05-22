@@ -13,7 +13,9 @@
 @import "../blocks/form/__field-title/form__field-title.css";
 @import "../blocks/form/__field-value/form__field-value.css";
 @import "../blocks/form/__field-scroll/form__field-scroll.css";
+@import "../blocks/form/__field-phone/form__field-phone.css";
 @import "../blocks/form/__button-submit/form__button-submit.css";
+
 
 
 /* Меню */
@@ -51,7 +53,6 @@
 /* Секция приглашение */
 
 @import "../blocks/invitation/invitation.css";
-@import "../blocks/invitation/__title/invitation__title.css";
 @import "../blocks/invitation/__subtitle/invitation__subtitle.css";
 @import "../blocks/invitation/__cards-container/invitation__cards-container.css";
 @import "../blocks/invitation/__card/invitation__card.css";
@@ -59,3 +60,44 @@
 @import "../blocks/invitation/__card-title/invitation__card-title.css";
 @import "../blocks/invitation/__card-text/invitation__card-text.css";
 @import "../blocks/invitation/__card-image/invitation__card-image.css";
+
+/* Секция нарушения */
+
+@import "../blocks/violations/violations.css";
+@import "../blocks/violations/__container/violations__container.css";
+
+/* Шаблонные блоки для разных секций */
+@import "../blocks/section/__title/section__title.css";
+@import "../blocks/section/__title/_white/section__title_white.css";
+@import "../blocks/section/__title-part/section__title-part.css";
+@import "../blocks/section/__agreement-text/section__agreement-text.css";
+@import "../blocks/section/__title/_left/section__title_left.css";
+
+/* Блок табс */
+@import "../blocks/tabs/tabs.css";
+@import "../blocks/tabs/__cell/tabs__cell.css";
+@import "../blocks/tabs/__cell/_active/tabs__cell_active.css";
+
+/* Блок лист */
+@import "../blocks/list/list.css";
+@import "../blocks/list/__text/list__text.css";
+@import "../blocks/list/__img/list__img.css";
+@import "../blocks/list/__shadow/list__shadow.css";
+
+/* Блок скачать фигню всякую */
+@import "../blocks/inspection/inspection.css";
+@import "../blocks/inspection/__title/inspection__title.css";
+@import "../blocks/inspection/__title/_orange/inspection__title_orange.css";
+@import "../blocks/inspection/__text/inspection__text.css";
+@import "../blocks/inspection/__download-button/inspection__download-button.css";
+@import "../blocks/inspection/__download-button-img/inspection__download-button-img.css";
+@import "../blocks/inspection/__download-button-container/inspection__download-button-container.css";
+
+/* Секция лидформ */
+@import "../blocks/leadform/leadform.css";
+@import "../blocks/leadform/__container/leadform__container.css";
+@import "../blocks/leadform/__text/leadform__text.css";
+@import "../blocks/leadform/leadform.css";
+@import "../blocks/leadform/leadform.css";
+@import "../blocks/leadform/leadform.css";
+@import "../blocks/leadform/leadform.css";

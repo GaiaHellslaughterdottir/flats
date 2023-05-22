@@ -1,0 +1,8 @@
+.section__title-part {
+  width: fit-content;
+  height: 64px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  color: #21A0AA;
+  padding: 0 10px 10px 10px;
+}
