@@ -14,9 +14,12 @@
 @import "../blocks/form/__field-value/form__field-value.css";
 @import "../blocks/form/__field-scroll/form__field-scroll.css";
 @import "../blocks/form/__field-phone/form__field-phone.css";
-@import "../blocks/form/__button-submit/form__button-submit.css";
+@import "../blocks/form/__square-wrapper/_phone/form__square-wrapper_phone.css";
 
-
+/* Кнопки */
+@import "../blocks/button/button.css";
+@import "../blocks/button/_orange/button_orange.css";
+@import "../blocks/button/_white/button_white.css";
 
 /* Меню */
 
@@ -97,7 +100,22 @@
 @import "../blocks/leadform/leadform.css";
 @import "../blocks/leadform/__container/leadform__container.css";
 @import "../blocks/leadform/__text/leadform__text.css";
-@import "../blocks/leadform/leadform.css";
-@import "../blocks/leadform/leadform.css";
-@import "../blocks/leadform/leadform.css";
-@import "../blocks/leadform/leadform.css";
+@import "../blocks/leadform/__img/leadform__img.css";
+
+
+/* Секция услуги */
+@import "../blocks/services/services.css";
+@import "../blocks/services/__card-container/services__card-container.css";
+@import "../blocks/services/__cards-container/services__cards-container.css";
+@import "../blocks/services/__card/services__card.css";
+@import "../blocks/services/__card-image/services__card-image.css";
+@import "../blocks/services/__card-title/services__card-title.css";
+@import "../blocks/services/__card-text/services__card-text.css";
+@import "../blocks/services/__card-more/services__card-more.css";
+@import "../blocks/services/__card-cost-wrapper/services__card-cost-wrapper.css";
+@import "../blocks/services/__card-cost-metre/services__card-cost-metre.css";
+@import "../blocks/services/__card-cost/services__card-cost.css";
+@import "../blocks/services/__card-shadow/services__card-shadow.css";
+
+/* Секция отзывы */
+@import "../blocks/reviews/__card-container/reviews__card-container.css";

@@ -1,12 +1,9 @@
-.form__button-submit {
+.button {
   height: 55px;
   width: max-content;
-  color: white;
   border-radius: 40px;
   padding: 15px 20px 15px 20px;
   min-height: 50px;
-  background-color: rgba(241, 109, 34, 1);
-  border: 0;
   font-size: 18px;
   cursor: pointer;
 }

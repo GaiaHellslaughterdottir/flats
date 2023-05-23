@@ -1,0 +1,9 @@
+.services__cards-container {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto 40px auto;
+}

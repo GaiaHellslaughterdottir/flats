@@ -1,0 +1,8 @@
+.services__card-image {
+  width: 360px;
+  height: 225px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin: 0;
+
+}

@@ -1,0 +1,10 @@
+.services__card-shadow {
+  width: 320px;
+  height: 10px;
+  position: absolute;
+  background: rgba(203, 204, 206, 0.33);
+  border-radius: 0 0 20px 20px;
+  left: 40px;
+  bottom: -10px;
+  z-index: 0;
+}

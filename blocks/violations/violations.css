@@ -8,4 +8,5 @@
   transform: translateY(-60px);
   background-color: #EFF1F4;
   border-radius: 60px;
+  z-index: 2;
 }

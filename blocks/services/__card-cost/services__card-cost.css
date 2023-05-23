@@ -1,0 +1,16 @@
+.services__card-cost {
+  margin: 0;
+  height: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #21A0AA;
+  border: 1px solid #21A0AA;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
