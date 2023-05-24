@@ -1,0 +1,7 @@
+.questions__wrapper {
+  width: 1030px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px auto 40px auto;
+}

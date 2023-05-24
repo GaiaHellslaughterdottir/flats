@@ -1,0 +1,14 @@
+.questions__text-wrapper {
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 40px;
+
+  width: 913px;
+
+  background: #FFFFFF;
+  border-radius: 20px 0px 0px 20px;
+  cursor: pointer;
+
+}

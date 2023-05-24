@@ -1,0 +1,12 @@
+.questions__arrow {
+  width: 112px;
+  height: content-box;
+  background-color: #FFFFFF;
+  border-radius: 0 20px 20px 0;
+
+  background-image: url("../../../images/arrow-down.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 38.32px;
+  cursor: pointer;
+}

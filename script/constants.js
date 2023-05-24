@@ -6,6 +6,9 @@ const servicesCardElementTemplate = document.querySelector('#services-card-templ
 const containerReviews = document.querySelector('.reviews__cards-container');
 //Шаблон карточки отзывов
 const reviewsCardElementTemplate = document.querySelector('#reviews-card-template').content;
+//Вопрос и стрелочка в разделе вопросов
+const question = document.querySelector('.questions__wrapper');
+
 
 const servicesCards = [
   {

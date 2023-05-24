@@ -1,5 +1,27 @@
 .reviews__card-container {
-  width: 400px;
-  height: 483px;
+  width: 396px;
+  height: 479px;
   border-radius: 20px;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.reviews__card-container:hover {
+  border: 2px solid #F16D22;
+  width: 396px;
+  height: 479px;
+}
+
+.reviews__card-container:hover .reviews__card-shadow {
+  background: rgba(241, 109, 34, 0.33);
+}
+
+.reviews__card-container:hover .reviews__play-icon {
+  z-index: 5;
 }

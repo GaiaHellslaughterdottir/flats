@@ -48,6 +48,47 @@ function createReviewCard(card) {
   return cardElement;
 }
 
+function handleQuestionClick(evt) {
+  const questionElement = evt.target;
+
+ if (questionElement.classList.contains('questions__arrow')) {
+    if (!questionElement.classList.contains('questions__arrow_opened')) {
+      openQuestion(questionElement.parentElement);
+    } else {
+      closeQuestion(questionElement.parentElement);
+    }
+  }
+
+  if (questionElement.classList.contains('questions__title')) {
+    if (!questionElement.classList.contains('questions__title_opened')) {
+      openQuestion(questionElement.parentElement.parentElement);
+    } else {
+      closeQuestion(questionElement.parentElement.parentElement);
+    }
+  }
+
+  if (questionElement.classList.contains('questions__text-wrapper')) {
+    if (!questionElement.querySelector('.questions__title').classList.contains('questions__title_opened')) {
+      openQuestion(questionElement.parentElement);
+    } else {
+      closeQuestion(questionElement.parentElement);
+    }
+  }
+
+}
+
+function openQuestion(rowWrapperElement) {
+  rowWrapperElement.querySelector('.questions__title').classList.add('questions__title_opened');
+  rowWrapperElement.querySelector('.questions__text').classList.add('questions__text_opened');
+  rowWrapperElement.querySelector('.questions__arrow').classList.add('questions__arrow_opened');
+}
+
+function closeQuestion(rowWrapperElement) {
+  rowWrapperElement.querySelector('.questions__title').classList.remove('questions__title_opened');
+  rowWrapperElement.querySelector('.questions__text').classList.remove('questions__text_opened');
+  rowWrapperElement.querySelector('.questions__arrow').classList.remove('questions__arrow_opened');
+}
+
 function init() {
 
   //Создание галереи услуг предустановленным набором карточек
@@ -61,6 +102,8 @@ function init() {
     const reviewsCardElement = createReviewCard(card);
     addReviewCard(reviewsCardElement);
   });
+
+  question.addEventListener('click', handleQuestionClick);
 
 }
 

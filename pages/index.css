@@ -21,6 +21,11 @@
 @import "../blocks/button/_orange/button_orange.css";
 @import "../blocks/button/_white/button_white.css";
 
+/* Стрелочки */
+@import "../blocks/arrow/arrow.css";
+@import "../blocks/arrow/_left/arrow_left.css";
+@import "../blocks/arrow/_right/arrow_right.css";
+
 /* Меню */
 
 @import "../blocks/header/header.css";
@@ -118,4 +123,27 @@
 @import "../blocks/services/__card-shadow/services__card-shadow.css";
 
 /* Секция отзывы */
+@import "../blocks/reviews/reviews.css";
+@import "../blocks/reviews/__cards-container/reviews__cards-container.css";
 @import "../blocks/reviews/__card-container/reviews__card-container.css";
+@import "../blocks/reviews/__title-container/reviews__title-container.css";
+@import "../blocks/reviews/__card-shadow/reviews__card-shadow.css";
+@import "../blocks/reviews/__card-image/reviews__card-image.css";
+@import "../blocks/reviews/__card-caption/reviews__card-caption.css";
+@import "../blocks/reviews/__card-name/reviews__card-name.css";
+@import "../blocks/reviews/__card-subtitle/reviews__card-subtitle.css";
+@import "../blocks/reviews/__card-video/reviews__card-video.css";
+@import "../blocks/reviews/__play-icon/reviews__play-icon.css";
+@import "../blocks/reviews/__wrapper/reviews__wrapper.css";
+
+/* Секция вопросы */
+@import "../blocks/questions/questions.css";
+@import "../blocks/questions/__text/questions__text.css";
+@import "../blocks/questions/__text/_opened/questions__text_opened.css";
+@import "../blocks/questions/__title/questions__title.css";
+@import "../blocks/questions/__title/_opened/questions__title_opened.css";
+@import "../blocks/questions/__arrow/questions__arrow.css";
+@import "../blocks/questions/__arrow/_opened/questions__arrow_opened.css";
+@import "../blocks/questions/__row-wrapper/questions__row-wrapper.css";
+@import "../blocks/questions/__text-wrapper/questions__text-wrapper.css";
+@import "../blocks/questions/__wrapper/questions__wrapper.css";
