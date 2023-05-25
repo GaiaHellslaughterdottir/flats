@@ -8,6 +8,7 @@
 </head>
 <body class="page">
 
+
   <header class="header">
     <menu class="menu">
       <div class="menu__logo"><span class="menu__logo_orange">SAPA</span><span class="menu__logo_green">CONTROL</span>
@@ -79,10 +80,11 @@
       <h1 class="banner__title">ПРИЕМКА КВАРТИРЫ <br/>В НОВОСТРОЙКЕ</h1>
       <h2 class="banner__subtitle">Закажите приемку квартиры и устраните дефекты за счет застройщика</h2>
       <form class="form">
-        <div class="form__square-wrapper">
-          <p class="form__field-title">Площадь</p>
-          <p class="form__field-value">20 м&sup2;</p>
-          <input id="form__field-square-scroll" class="form__field-scroll" type="range" min="1" max="500" step="1">
+        <div class="form__field-wrapper">
+          <label class="form__label" for="form__field_square-scroll">Площадь</label>
+          <input class="form__field" type="text" value="20 м&sup2;"/>
+          <input class="form__field form__field_scroll" id="form__field_square-scroll" type="range" min="1" max="500"
+                 step="1"/>
         </div>
         <button class="button button_orange" type="submit">Узнать стоимость</button>
       </form>
@@ -176,13 +178,15 @@
       <p class="leadform__text">Расчет площади квартиры, рекомендации по ремонту,
         <br>дизайну и строительной бригаде</p>
       <form class="form">
-        <div class="form__square-wrapper form__square-wrapper_phone">
-          <label class="form__field-title" for="form__field-phone">Телефон</label>
-          <input class="form__field-phone" id="form__field-phone" type="tel" placeholder="+9 (___) ___-__-__">
+        <div class="form__field-wrapper">
+          <label class="form__label" for="form__field_phone">Телефон</label>
+          <input class="form__field" id="form__field_phone" type="tel"
+                 placeholder="+9 (___) ___-__-__"
+                 pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
         </div>
         <button class="button button_orange" type="submit">Отправить</button>
       </form>
-      <p class="section__agreement-text">Нажимая на кнопку, вы принимаете Положение и Согласие
+      <p class="agreement-text">Нажимая на кнопку, вы принимаете Положение и Согласие
         <br>на обработку персональных данных</p>
     </div>
     <img class="leadform__img" src="images/manager.png">
@@ -337,6 +341,86 @@
   <footer class="footer">
 
   </footer>
+
+
+  <div class="popup popup_opened">
+    <div class="popup__container">
+      <button class="popup__close-icon" type="button"></button>
+      <form class="form form_popup" name="form" novalidate>
+        <h2 class="section__title">Заказать приемку</h2>
+        <div class="form__columns">
+          <div class="form__column">
+            <div class="form__field-wrapper form__field-wrapper_bordered">
+              <label class="form__label" for="form__field_phone">Имя</label>
+              <input class="form__field" id="form-field-name" type="text" name="name" placeholder="Василий"
+                     minlength="2" maxlength="40" required/>
+
+            </div>
+            <div class="form__field-wrapper form__field-wrapper_bordered">
+              <label class="form__label" for="form__field_phone">Телефон</label>
+              <input class="form__field" id="form-field-phone" type="tel" placeholder="+9 (___) ___-__-__"
+                     pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required/>
+            </div>
+            <div class="form__field-wrapper form__field-wrapper_bordered">
+              <label class="form__label" for="form__field_phone">Жилищный комплекс</label>
+              <input class="form__field" type="text" placeholder="Ильинские луга" minlength="2" maxlength="40"
+                     required/>
+            </div>
+          </div>
+          <div class="form__column">
+            <div class="form__field-wrapper form__field-wrapper_bordered">
+              <label class="form__label" for="form__field_square-scroll">Площадь</label>
+              <input class="form__field" type="text" value="20 м&sup2;"/>
+              <input class="form__field form__field_scroll" type="range" min="1" max="500"
+                     step="1"/>
+            </div>
+
+
+
+
+
+            <div class="tabs tabs_form">
+              <input class="checkbox__invisible" id="checkbox-form1" name="checkbox-form1" type="checkbox">
+              <label for="checkbox-form1">Без отделки</label>
+
+<!--
+              <span class="checkbox" href="#">Без отделки</span>
+-->
+
+              <a class="tabs__cell tabs__cell_form tabs__cell_active" href="#">С отделкой</a>
+              <a class="tabs__cell tabs__cell_form" href="#">Предчистовая</a>
+            </div>
+
+
+
+
+
+
+            <div class="tabs tabs_form">
+              <a class="tabs__cell tabs__cell_form" href="#">Без отделки</a>
+              <a class="tabs__cell tabs__cell_form tabs__cell_active" href="#">С отделкой</a>
+              <a class="tabs__cell tabs__cell_form" href="#">Предчистовая</a>
+            </div>
+
+
+            <div class="form__cost">
+              <div>
+                <p class="form__cost-title">Стоимость приемки</p>
+                <p class="form__cost-value">3 000 ₽</p>
+              </div>
+              <div>
+                <p class="form__cost-title">Цена / метраж</p>
+                <p class="form__cost-value">70 ₽/ м2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="button button_orange" type="submit">Отправить</button>
+        <p class="agreement-text agreement-text_center">Нажимая на кнопку, вы принимаете Положение и Согласие
+          <br>на обработку персональных данных</p>
+      </form>
+    </div>
+  </div>
 
   <script src="script/constants.js"></script>
   <script src="script/script.js"></script>

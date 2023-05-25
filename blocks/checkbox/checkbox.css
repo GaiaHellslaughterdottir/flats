@@ -1,0 +1,24 @@
+.checkbox {
+
+}
+
+.checkbox[type="checkbox"] + span {
+
+  width: 160px;
+  padding: 0;
+  background: #FFFFFF;
+}
+
+.checkbox[type="checkbox"] + span:focus {
+  background: #EFF1F4;
+
+}
+
+.checkbox[type="checkbox"] + span:focus {
+  background: #FFFFFF;
+
+}
+
+.checkbox[type="checkbox"] + span:disabled {
+  background: #EFF1F4;
+}

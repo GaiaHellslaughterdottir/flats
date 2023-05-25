@@ -1,4 +1,7 @@
-.form__square-wrapper {
+.form__field-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   height: 55px;
   width: 190px;
   color: rgba(32, 48, 74, 1);

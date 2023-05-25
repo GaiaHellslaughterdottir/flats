@@ -1,0 +1,14 @@
+.tabs__cell_form {
+   width: 160px;
+   padding: 0;
+   background: #FFFFFF;
+
+ }
+
+.tabs__cell:hover {
+  background: #EFF1F4;
+}
+
+.tabs__cell:active {
+  background: #EFF1F4;
+}

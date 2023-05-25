@@ -9,12 +9,30 @@
 /* Форма */
 
 @import "../blocks/form/form.css";
-@import "../blocks/form/__square-wrapper/form__square-wrapper.css";
-@import "../blocks/form/__field-title/form__field-title.css";
-@import "../blocks/form/__field-value/form__field-value.css";
-@import "../blocks/form/__field-scroll/form__field-scroll.css";
-@import "../blocks/form/__field-phone/form__field-phone.css";
-@import "../blocks/form/__square-wrapper/_phone/form__square-wrapper_phone.css";
+@import "../blocks/form/__field/form__field.css";
+@import "../blocks/form/_popup/form_popup.css";
+@import "../blocks/form/__columns/form__columns.css";
+@import "../blocks/form/__column/form__column.css";
+@import "../blocks/form/__label/form__label.css";
+@import "../blocks/form/__field-wrapper/form__field-wrapper.css";
+@import "../blocks/form/__field-wrapper/_bordered/form__field-wrapper_bordered.css";
+@import "../blocks/form/__field/_title/form__field_title.css";
+@import "../blocks/form/__field/_scroll/form__field_scroll.css";
+
+@import "../blocks/form/__cost/form__cost.css";
+@import "../blocks/form/__cost-title/form__cost-title.css";
+@import "../blocks/form/__cost-value/form__cost-value.css";
+
+
+/* чекбокс */
+@import "../blocks/checkbox/checkbox.css";
+@import "../blocks/checkbox/checkbox__invisible/checkbox__invisible.css";
+
+/* Попапы */
+@import "../blocks/popup/popup.css";
+@import "../blocks/popup/_opened/popup_opened.css";
+@import "../blocks/popup/__container/popup__container.css";
+@import "../blocks/popup/__close-icon/popup__close-icon.css";
 
 /* Кнопки */
 @import "../blocks/button/button.css";
@@ -78,13 +96,16 @@
 @import "../blocks/section/__title/section__title.css";
 @import "../blocks/section/__title/_white/section__title_white.css";
 @import "../blocks/section/__title-part/section__title-part.css";
-@import "../blocks/section/__agreement-text/section__agreement-text.css";
+@import "../blocks/agreement-text/agreement-text.css";
+@import "../blocks/agreement-text/_center/agreement-text_center.css";
 @import "../blocks/section/__title/_left/section__title_left.css";
 
 /* Блок табс */
 @import "../blocks/tabs/tabs.css";
 @import "../blocks/tabs/__cell/tabs__cell.css";
 @import "../blocks/tabs/__cell/_active/tabs__cell_active.css";
+@import "../blocks/tabs/_form/tabs_form.css";
+@import "../blocks/tabs/__cell/_form/tabs__cell_form.css";
 
 /* Блок лист */
 @import "../blocks/list/list.css";
@@ -147,3 +168,5 @@
 @import "../blocks/questions/__row-wrapper/questions__row-wrapper.css";
 @import "../blocks/questions/__text-wrapper/questions__text-wrapper.css";
 @import "../blocks/questions/__wrapper/questions__wrapper.css";
+
+

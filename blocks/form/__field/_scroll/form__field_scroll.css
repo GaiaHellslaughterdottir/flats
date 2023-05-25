@@ -1,23 +1,23 @@
-.form__field-scroll {
+.form__field_scroll {
   width: 190px;
   border: none;
   outline: none;
-  transform: translateY(2px);
   background-color: rgba(241, 109, 34, 0);
+  transform: translateY(4px);
 }
 
-.form__field-scroll[type=range] {
+.form__field_scroll[type=range] {
   height: 13px;
   -webkit-appearance: none;
 }
 
-.form__field-scroll[type=range] {
+.form__field_scroll[type=range] {
   --range: calc(var(--max) - var(--min));
   --ratio: calc((var(--value) - var(--min)) / var(--range));
   --sx: calc(0.5 * 13px + var(--ratio) * (100% - 13px));
 }
 
-.form__field-scroll[type=range]::-webkit-slider-thumb {
+.form__field_scroll[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 13px;
   height: 13px;
@@ -27,7 +27,7 @@
   margin-top: calc(3px * 0.5 - max(13px * 0.5, 3px));
 }
 
-.form__field-scroll[type=range]::-webkit-slider-runnable-track {
+.form__field_scroll[type=range]::-webkit-slider-runnable-track {
   height: 3px;
   border: none;
   border-radius: 0;
@@ -35,12 +35,12 @@
   box-shadow: none;
 }
 
-.form__field-scroll[type=range]::-webkit-slider-runnable-track {
-  background: linear-gradient(rgba(241, 109, 34, 1),rgba(241, 109, 34, 1)) 0/var(--sx) 100% no-repeat, #efefef;
+.form__field_scroll[type=range]::-webkit-slider-runnable-track {
+  background: linear-gradient(rgba(241, 109, 34, 1),rgba(241, 109, 34, 1)) 0/var(--sx) 100% no-repeat, rgba(241, 109, 34, 0);
 }
 
 
-.form__field-scroll[type=range]::-moz-range-thumb {
+.form__field_scroll[type=range]::-moz-range-thumb {
   width: max(calc(13px - 3px - 3px),0px);
   height: max(calc(13px - 3px - 3px),0px);
   border-radius: 13px;
@@ -48,7 +48,7 @@
   border: 3px solid rgba(241, 109, 34, 1);
 }
 
-.form__field-scroll[type=range]::-moz-range-track {
+.form__field_scroll[type=range]::-moz-range-track {
   height: 3px;
   border: none;
   border-radius: 0;
@@ -56,21 +56,21 @@
   box-shadow: none;
 }
 
-.form__field-scroll[type=range]::-moz-range-track {
+.form__field_scroll[type=range]::-moz-range-track {
   background: linear-gradient(rgba(241, 109, 34, 1),rgba(241, 109, 34, 1)) 0/var(--sx) 100% no-repeat, #FFFFFF;
 }
 
-.form__field-scroll[type=range]::-ms-fill-upper {
+.form__field_scroll[type=range]::-ms-fill-upper {
   background: transparent;
   border-color: transparent;
 }
 
-.form__field-scroll[type=range]::-ms-fill-lower {
+.form__field_scroll[type=range]::-ms-fill-lower {
   background: transparent;
   border-color: transparent;
 }
 
-.form__field-scroll[type=range]::-ms-thumb {
+.form__field_scroll[type=range]::-ms-thumb {
   width: 13px;
   height: 13px;
   border-radius: 13px;
@@ -80,7 +80,7 @@
   box-sizing: border-box;
 }
 
-.form__field-scroll[type=range]::-ms-track {
+.form__field_scroll[type=range]::-ms-track {
   height: 3px;
   border-radius: 0;
   background: #FFFFFF;
@@ -89,7 +89,7 @@
   box-sizing: border-box;
 }
 
-.form__field-scroll[type=range]::-ms-fill-lower {
+.form__field_scroll[type=range]::-ms-fill-lower {
   height: 3px;
   border-radius: 0px 0 0 0px;
   margin: -undefined 0 -undefined -undefined;

@@ -1,0 +1,11 @@
+.form__cost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 55px;
+  margin: 0;
+
+
+}
