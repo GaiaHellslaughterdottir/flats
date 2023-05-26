@@ -24,9 +24,14 @@
 @import "../blocks/form/__cost-value/form__cost-value.css";
 
 
-/* чекбокс */
-@import "../blocks/checkbox/checkbox.css";
-@import "../blocks/checkbox/checkbox__invisible/checkbox__invisible.css";
+/* Радио кнопка в форме */
+@import "../blocks/radio-button/__visible/radio-button__visible.css";
+@import "../blocks/radio-button/__wrapper/radio-button__wrapper.css";
+@import "../blocks/radio-button/__invisible/radio-button__invisible.css";
+@import "../blocks/radio-button/__visible/radio-button__visible.css";
+@import "../blocks/radio-button/__text/radio-button__text.css";
+
+
 
 /* Попапы */
 @import "../blocks/popup/popup.css";

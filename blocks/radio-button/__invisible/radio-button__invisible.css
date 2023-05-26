@@ -1,0 +1,12 @@
+.radio-button__invisible {
+   width: 0;
+   height: 0;
+   position: absolute;
+   opacity: 0;
+   z-index: -1;
+ }
+
+.radio-button__invisible:checked + .radio-button__visible::before {
+  transform: translate(-50%, -50%) scale(1);
+
+}

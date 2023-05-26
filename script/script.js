@@ -6,6 +6,40 @@ for (let e of document.querySelectorAll('input[type="range"].form__field_scroll'
 }
 
 /**
+ * Открытие всплывающего окна
+ * @param popup - вслывающее окно
+ */
+function openPopup(popup) {
+  popup.classList.add('popup_opened');
+  document.onkeydown = function (evt) {
+    if (evt.keyCode === keyEscCode) {
+      const openedPopup = document.querySelector('.popup_opened');
+      if (openedPopup) {
+        closePopup(openedPopup);
+      }
+    }
+  };
+}
+
+/**
+ * Закрытие всплывающего окна
+ * @param popup - всплывающее окно
+ */
+function closePopup(popup) {
+  popup.classList.remove('popup_opened');
+  document.onkeydown = null;
+}
+
+/**
+ * Обработчик события закрытия всплывающего окна по крестику
+ * @param evt - событие
+ */
+function handleClosePopup(evt) {
+  const popup = evt.target.closest('.popup');
+  closePopup(popup);
+}
+
+/**
  * Функция добавления новой карточки услуг в галерею
  * @param servicesCardElement - добавляемая карточка
  */
@@ -19,6 +53,14 @@ function addServicesCard(servicesCardElement) {
  */
 function addReviewCard(reviewsCardElement) {
   containerReviews.prepend(reviewsCardElement);
+}
+
+/**
+ * Функция добавления новой услуги в контейнер услуг
+ * @param finishingTypeElement - добавляемая карточка
+ */
+function addFinishingType(finishingTypeElement) {
+  containerFinishingTypes.prepend(finishingTypeElement);
 }
 
 /**
@@ -48,10 +90,25 @@ function createReviewCard(card) {
   return cardElement;
 }
 
+/**
+ * Функция создания контейнера выбора услуги
+ * @param finishingType - тип услуги
+ */
+function createFinishingTypeCost(finishingType) {
+  const finishingTypeElement = finishingTypeElementTemplate.querySelector('.radio-button__wrapper').cloneNode(true);
+  finishingTypeElement.querySelector('.radio-button__text').textContent = finishingType.type;
+  return finishingTypeElement;
+}
+
+
+/**
+ * Обработчик события разворачивания и сворачивания вопросов
+ * @param evt - событие
+ */
 function handleQuestionClick(evt) {
   const questionElement = evt.target;
 
- if (questionElement.classList.contains('questions__arrow')) {
+  if (questionElement.classList.contains('questions__arrow')) {
     if (!questionElement.classList.contains('questions__arrow_opened')) {
       openQuestion(questionElement.parentElement);
     } else {
@@ -77,18 +134,46 @@ function handleQuestionClick(evt) {
 
 }
 
+/**
+ * Функция разворачивания вопроса
+ * @param rowWrapperElement - элемент обертки вопроса и стрелочки
+ */
 function openQuestion(rowWrapperElement) {
   rowWrapperElement.querySelector('.questions__title').classList.add('questions__title_opened');
   rowWrapperElement.querySelector('.questions__text').classList.add('questions__text_opened');
   rowWrapperElement.querySelector('.questions__arrow').classList.add('questions__arrow_opened');
 }
 
+/**
+ * Функция сворачивания вопроса
+ * @param rowWrapperElement - элемент обертки вопроса и стрелочки
+ */
 function closeQuestion(rowWrapperElement) {
   rowWrapperElement.querySelector('.questions__title').classList.remove('questions__title_opened');
   rowWrapperElement.querySelector('.questions__text').classList.remove('questions__text_opened');
   rowWrapperElement.querySelector('.questions__arrow').classList.remove('questions__arrow_opened');
 }
 
+function handleGgg(evt) {
+  console.log(evt.value);
+  const value = evt.target.parentElement.querySelector('.radio-button__text').textContent;
+  console.log(value);
+  const cost = document.querySelector('#cost');
+  const costMetre = document.querySelector('#costMetre');
+
+  finishingTypes.forEach(type => {
+    if (type.type === value) {
+      cost.textContent = type.cost;
+      costMetre.textContent = type.costMetre;
+    }
+  });
+
+
+}
+
+/**
+ * Инициализация сайта
+ */
 function init() {
 
   //Создание галереи услуг предустановленным набором карточек
@@ -103,14 +188,32 @@ function init() {
     addReviewCard(reviewsCardElement);
   });
 
+  //Создание контейнера со списком услуг
+  finishingTypes.forEach(finishingType => {
+    const finishingTypeElement = createFinishingTypeCost(finishingType);
+    addFinishingType(finishingTypeElement);
+
+  });
+
+  //Добавление слушателя на иконку закрытия окна
+  popupCloseIconList.forEach(closeIcon => {
+    closeIcon.addEventListener('click', handleClosePopup);
+  });
+
+  //Добавление слушателя на кнопку выбора услуги
+  document.querySelectorAll('.radio-button__invisible').forEach(ggg => {
+    ggg.addEventListener('click', handleGgg);
+
+  });
+
+
   question.addEventListener('click', handleQuestionClick);
 
-  document.querySelector('#checkbox-form1').addEventListener('input', function (evt) {
-    console.log(evt.value);
+  buttonCost.addEventListener('click', function () {
+    openPopup(popupCost);
   })
 
+
 }
-
-
 
 init();

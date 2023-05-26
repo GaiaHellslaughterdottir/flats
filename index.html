@@ -86,7 +86,7 @@
           <input class="form__field form__field_scroll" id="form__field_square-scroll" type="range" min="1" max="500"
                  step="1"/>
         </div>
-        <button class="button button_orange" type="submit">Узнать стоимость</button>
+        <button class="button button_orange" type="submit" id="button_cost">Узнать стоимость</button>
       </form>
     </div>
     <div class="banner__image"></div>
@@ -142,12 +142,12 @@
     </nav>
     <div class="violations__container">
       <div class="list">
-        <p class="list__text"><img class="list__img" src="images/no.png">Отклонение по вертикали стены</p>
-        <p class="list__text"><img class="list__img" src="images/no.png">Не заделаны штробы</p>
-        <p class="list__text"><img class="list__img" src="images/no.png">Разнотон обоев</p>
-        <p class="list__text"><img class="list__img" src="images/no.png">Перепад уровня пола</p>
-        <p class="list__text"><img class="list__img" src="images/no.png">Трещины по штукатурке</p>
-        <p class="list__text"><img class="list__img" src="images/no.png">Плесень в местах стыков </p>
+        <p class="list__text"><img class="list__img" src="images/no.png" alt="Изображение">Отклонение по вертикали стены</p>
+        <p class="list__text"><img class="list__img" src="images/no.png" alt="Изображение">Не заделаны штробы</p>
+        <p class="list__text"><img class="list__img" src="images/no.png" alt="Изображение">Разнотон обоев</p>
+        <p class="list__text"><img class="list__img" src="images/no.png" alt="Изображение">Перепад уровня пола</p>
+        <p class="list__text"><img class="list__img" src="images/no.png" alt="Изображение">Трещины по штукатурке</p>
+        <p class="list__text"><img class="list__img" src="images/no.png" alt="Изображение">Плесень в местах стыков </p>
         <div class="list__shadow"></div>
       </div>
       <div class="inspection">
@@ -158,11 +158,11 @@
           знаниям нормативов</p>
         <div class="inspection__download-button-container">
           <button class="inspection__download-button" type="button"><img class="inspection__download-button-img"
-                                                                         src="images/bullet_check-list.png">Скачать
+                                                                         src="images/bullet_check-list.png" alt="Изображение">Скачать
             чек-лист
           </button>
           <button class="inspection__download-button" type="button"><img class="inspection__download-button-img"
-                                                                         src="images/bullet_report.png">Пример дефектной
+                                                                         src="images/bullet_report.png" alt="Изображение">Пример дефектной
             ведомости
           </button>
         </div>
@@ -343,7 +343,7 @@
   </footer>
 
 
-  <div class="popup popup_opened">
+  <div class="popup" id="popup-cost">
     <div class="popup__container">
       <button class="popup__close-icon" type="button"></button>
       <form class="form form_popup" name="form" novalidate>
@@ -375,42 +375,46 @@
                      step="1"/>
             </div>
 
+            <div class="tabs tabs_form" id="finishing-type-cost-container">
+              <!--<label class="radio-button__wrapper">
+                <input class="radio-button__invisible" name="finishing" value="without-finishing" type="radio">
+                <span class="radio-button__visible"></span>
+                <span class="radio-button__text">Без отделки</span>
+              </label>
 
+              <label class="radio-button__wrapper">
+                <input class="radio-button__invisible" name="finishing" value="with-finishing" type="radio">
+                <span class="radio-button__visible"></span>
+                <span class="radio-button__text">С отделкой</span>
+              </label>
 
-
-
-            <div class="tabs tabs_form">
-              <input class="checkbox__invisible" id="checkbox-form1" name="checkbox-form1" type="checkbox">
-              <label for="checkbox-form1">Без отделки</label>
-
-<!--
-              <span class="checkbox" href="#">Без отделки</span>
--->
-
-              <a class="tabs__cell tabs__cell_form tabs__cell_active" href="#">С отделкой</a>
-              <a class="tabs__cell tabs__cell_form" href="#">Предчистовая</a>
+              <label class="radio-button__wrapper">
+                <input class="radio-button__invisible" name="finishing" value="prefinishing" type="radio">
+                <span class="radio-button__visible"></span>
+                <span class="radio-button__text">Предчистовая</span>
+              </label>-->
             </div>
 
+            <template id="finishing-type-cost">
+              <label class="radio-button__wrapper">
+                <input class="radio-button__invisible" name="finishing" value="without-finishing" type="radio">
+                <span class="radio-button__visible"></span>
+                <span class="radio-button__text">Без отделки</span>
+              </label>
+            </template>
 
 
 
-
-
-            <div class="tabs tabs_form">
-              <a class="tabs__cell tabs__cell_form" href="#">Без отделки</a>
-              <a class="tabs__cell tabs__cell_form tabs__cell_active" href="#">С отделкой</a>
-              <a class="tabs__cell tabs__cell_form" href="#">Предчистовая</a>
-            </div>
 
 
             <div class="form__cost">
               <div>
                 <p class="form__cost-title">Стоимость приемки</p>
-                <p class="form__cost-value">3 000 ₽</p>
+                <p class="form__cost-value"><span id="cost">3 000</span><span> ₽</span></p>
               </div>
               <div>
                 <p class="form__cost-title">Цена / метраж</p>
-                <p class="form__cost-value">70 ₽/ м2</p>
+                <p class="form__cost-value"><span id="costMetre">70</span><span> ₽/ м2</span></p>
               </div>
             </div>
           </div>

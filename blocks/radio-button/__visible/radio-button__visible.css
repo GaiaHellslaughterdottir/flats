@@ -1,0 +1,34 @@
+.radio-button__visible {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 160px;
+  height: 55px;
+
+  background: white;
+  border-radius: 50px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: #20304A;
+  text-decoration: none;
+}
+
+.radio-button__visible::before {
+  content: "";
+  display: inline-block;
+  width: 160px;
+  height: 55px;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in;
+  background-color: #EFF1F4;
+}

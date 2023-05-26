@@ -6,9 +6,24 @@ const servicesCardElementTemplate = document.querySelector('#services-card-templ
 const containerReviews = document.querySelector('.reviews__cards-container');
 //Шаблон карточки отзывов
 const reviewsCardElementTemplate = document.querySelector('#reviews-card-template').content;
+//Шаблон контейнера услуг
+const finishingTypeElementTemplate = document.querySelector('#finishing-type-cost').content;
+//Контейнер услуг
+const containerFinishingTypes = document.querySelector('#finishing-type-cost-container');
 //Вопрос и стрелочка в разделе вопросов
 const question = document.querySelector('.questions__wrapper');
 
+//Всплывающее окно рассчитать цену
+const popupCost = document.querySelector('#popup-cost');
+
+//Иконки закрытия всплывающих окон
+const popupCloseIconList = document.querySelectorAll('.popup__close-icon');
+//Окна popup
+const popups = document.querySelectorAll('.popup');
+//Кнопка открытия формы Узнать стоимость
+const buttonCost = document.querySelector('#button_cost');
+//
+const keyEscCode = 27;
 
 const servicesCards = [
   {
@@ -34,7 +49,7 @@ const servicesCards = [
   },
 ];
 
-
+//Массив с содержимым карточек отзывов
 const reviewsCards = [
   {
     video: 'https://youtu.be/2IU7zaot30s',
@@ -113,5 +128,25 @@ const reviewsCards = [
       'Эксперт всё показал, объяснил, отметил и проконсультировал. В считанные часы было предоставлено заключение со всеми недостатками и замечаниями. \n' +
       '\n' +
       'Цена за услугу приемлемая, жалеть не стоит. Компания предоставляет услуги по сопровождению дел в судах. Однозначно рекомендую.',
+  }
+];
+
+
+// Массив тип отделки и стоимость
+const finishingTypes = [
+  {
+    type: 'Без отделки',
+    cost: 3000,
+    costMetre: 70
+  },
+  {
+    type: 'С отделкой',
+    cost: 4000,
+    costMetre: 100
+  },
+  {
+    type: 'Предчистовая',
+    cost: 5000,
+    costMetre: 130
   }
 ];
